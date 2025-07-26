@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <span class="fs-4">
+
+        </span>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="/profile" id="profile-page" hidden class="nav-link px-2 link-dark">Profile</a></li>
+        <li><a href="/challenges" id="challenges-page" class="nav-link px-2 link-dark">Challenges</a></li>
+        <li><a href="/video" id="video-page" class="nav-link px-2 link-dark">Video</a></li>
+        <li><a href="/leaderboard" id="leaderboard-page" class="nav-link px-2 link-dark">Leaderboard</a></li>
+        <li><a href="/faq" class="nav-link px-2 link-dark">FAQs</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2" id="Login" onclick="location.href='/login'">Login</button>
+        <button type="button" class="btn btn-primary" id="sign-up" onclick="location.href='/signup'">Sign Up</button>
+        <button type="button" class="btn btn-outline-primary me-2" id="Logout" hidden>Logout</button>
+    </div>
+</header>
+
+<div style="margin-left:2cm;margin-right:2cm">
+
+<div style="margin-bottom:0.5cm"><h2>General</h2></div>
+
+<div class="accordion" id="generalAccordion">
+
+  <div class="card">
+    <div class="card-header" id="general-heading-1">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-1" aria-expanded="true" aria-controls="general-collapse-1">
+          How does AI Exchange work?
+        </button>
+      </h5>
+    </div>
+
+    <div id="general-collapse-1" class="collapse" aria-labelledby="general-heading-1" data-parent="#generalAccordion">
+      <div class="card-body">
+          <p>AI Exchange solves data science problems through a network of experts. Decentralized solutions are immediately production-ready in sponsor's cloud environment.</p>
+
+          <p>Challenge sponsors (businesses) post recurrent data science problems and offer a prize pool for each round. They benefit from the best solutions, avoid the burden of model-related technical debt, and reduce to 0 model-related cloud costs.</p>
+
+          <p>
+              Experts offer their skills to find solutions and upload their code. If their solution was in the optimal set of solutions for the round, they receive part of the prize pool.
+              <br>
+              Experts pay for all cloud resources used to run their code.
+          </p>
+          <p>Intellectual property on both sides (sponsors and experts) is protected by design.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="general-heading-5">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-5" aria-expanded="false" aria-controls="general-collapse-5">
+          Isn't this just another Kaggle?
+        </button>
+      </h5>
+    </div>
+    <div id="general-collapse-5" class="collapse" aria-labelledby="general-heading-5" data-parent="#generalAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">The trait in common with Kaggle Competitions is that experts compete and cooperate to find a solution to a specific problem. That's it.</p>
+        <p>
+            <i>For Experts</i>
+            <br>
+            AI Exchange hosts <b>recurrent</b> challenges, this means you have the chance to improve your solution. Moreover, if you find a solution that endures the test of time, you win prizes with no or little effort.
+            AI Exchange protects your intellectual property. Solutions are your own, no one can access your code.
+        </p>
+        <p>
+            <i>For Businesses</i>
+            <br>
+            AI Exchange is meant to integrate with your cloud infrastructure. Decentralized solutions are <b>production-ready</b> on your infrastructure.
+            Let your AI teams focus on what they are uniquely positioned to do: data curation, problem setting, and interpretation. Let experts do problem solving.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="general-heading-3">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-3" aria-expanded="false" aria-controls="general-collapse-3">
+          What are AI Exchange's currencies?
+        </button>
+      </h5>
+    </div>
+    <div id="general-collapse-3" class="collapse" aria-labelledby="general-heading-3" data-parent="#generalAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">We have two currencies on the platform: credits and USD.
+          Credits are the digital currency of the platform. With credits experts pay for cloud resources used to run their code. New users automatically get 10 credits. Experts may purchase new credits from the profile page (1 credit = $1).
+          Wallet contains all USD won from past rounds, unless withdrawn. Experts can withdraw money from their wallet at any time. Every withdrawal of less than $20 will have a $3 fee. All withdrawals over $20 are free.
+          To ask for a withdrawal email support@ai-exchange.io.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="general-heading-4">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#general-collapse-4" aria-expanded="false" aria-controls="general-collapse-4">
+          I didn't find what I was looking for. What can I do?
+        </button>
+      </h5>
+    </div>
+    <div id="general-collapse-4" class="collapse" aria-labelledby="general-heading-4" data-parent="#generalAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">Drop us a line at support@ai-exchange.io, we'll get back to you as soon as possible.
+      </p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div style="margin-bottom:0.5cm;margin-top:1cm"><h2>Experts</h2></div>
+
+<div class="accordion" id="expertAccordion">
+
+    <div class="card">
+    <div class="card-header" id="expert-heading-0">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expert-collapse-0" aria-expanded="false" aria-controls="expert-collapse-0">
+          Can I earn money?
+        </button>
+      </h5>
+    </div>
+    <div id="expert-collapse-0" class="collapse" aria-labelledby="expert-heading-0" data-parent="#expertAccordion">
+      <div class="card-body">
+          Yes.
+          <p  style="white-space: pre-line;text-align: justify">When ground truths (labels) become available the current round resolves and winners are elected. AI Exchange builds an optimal metamodel from all competing models using ground truths.
+              Each model weight in this metamodel is the prize percentage experts win for the round.
+
+              You must join the current round to be eligible to win the prize pool.
+      </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card">
+    <div class="card-header" id="expert-heading-1">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expert-collapse-1" aria-expanded="false" aria-controls="expert-collapse-1">
+          Does code I upload have any requirements?
+        </button>
+      </h5>
+    </div>
+    <div id="expert-collapse-1" class="collapse" aria-labelledby="expert-heading-1" data-parent="#expertAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">We currently support Python3.8. Supported libraries are: pandas 1.1.5, scikit-learn 1.0.1, lightgbm 3.3.2.
+          We are actively working to add more libraries. <a href="/video">Watch our how-tos</a> to have all the information you need.
+          Your code will run on a Linux machine with 4 vCPUs and 16 GB RAM. Functions in your main.py must execute within 6 hours to avoid compute timeout.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="expert-heading-3">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expert-collapse-3" aria-expanded="false" aria-controls="expert-collapse-3">
+          Intellectual property will be exposed! Won't it?
+        </button>
+      </h5>
+    </div>
+    <div id="expert-collapse-3" class="collapse" aria-labelledby="expert-heading-3" data-parent="#expertAccordion">
+      <div class="card-body">
+        Short answer: <b>no</b>.
+        <p style="white-space: pre-line;text-align: justify">We store your code in a place dedicated just to you. No one can access this space.
+
+        Your code leaves this space only to execute on an ephemeral VM isolated by design that is destroyed as soon as execution completes.
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="expert-heading-2">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expert-collapse-2" aria-expanded="false" aria-controls="expert-collapse-2">
+          Why do I need a gmail account to sign up?
+        </button>
+      </h5>
+    </div>
+    <div id="expert-collapse-2" class="collapse" aria-labelledby="expert-heading-2" data-parent="#expertAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">Our backend is powered by Google Cloud Platform (GCP).
+          Gmail accounts are "native" on GCP, thus making backend authentication easier.
+      </p>
+      </div>
+    </div>
+  </div>
+
+    <div class="card">
+    <div class="card-header" id="expert-heading-4">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#expert-collapse-4" aria-expanded="false" aria-controls="expert-collapse-4">
+          I successfully uploaded my code but I don't see any job running. Why?
+        </button>
+      </h5>
+    </div>
+    <div id="expert-collapse-4" class="collapse" aria-labelledby="expert-heading-4" data-parent="#expertAccordion">
+      <div class="card-body">
+        <p style="white-space: pre-line;text-align: justify">If you code upload was successful then it's queued for execution on AI Exchange.
+            Your code may be queued for few minutes before it starts executing.
+            Check back in 10 minutes and you'll find your job running.
+      </p>
+      </div>
+    </div>
+    </div>
+
+</div>
+
+<div style="margin-bottom:0.5cm;margin-top:1cm"><h2>Business</h2></div>
+
+<div class="accordion" id="businessAccordion">
+
+    <div class="card">
+    <div class="card-header" id="business-heading-0">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapse-0" aria-expanded="false" aria-controls="business-collapse-0">
+          Why should I bother with this?
+        </button>
+      </h5>
+    </div>
+    <div id="business-collapse-0" class="collapse" aria-labelledby="business-heading-0" data-parent="#businessAccordion">
+      <div class="card-body">
+      <p>
+          Have better AI applications, at a fraction of price and time it takes for in-house solutions.
+      </p>
+      <p>
+          AI teams today must cope with many different problems: data curation, problem setting, problem solving, and interpretation.
+          This is too much. Projects are slower, more expensive, and fail more often.
+
+          Your team is uniquely positioned to cope with data curation, problem setting, and interpretation. Why? Only <i>they</i> know your
+          business, what you are trying to achieve and why. Conversely, your team is not uniquely positioned to solve AI problems. Many experts
+          know how to solve AI problems, and odds are your team won't come up with the most effective solution.
+      </p>
+      <p>
+          AI Exchange will let your team focus on what they are uniquely positioned to do and save them a lot of time and code lines.
+      </p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="card">
+    <div class="card-header" id="business-heading-1">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapse-1" aria-expanded="false" aria-controls="business-collapse-1">
+          What kind of business is this for?
+        </button>
+      </h5>
+    </div>
+    <div id="business-collapse-1" class="collapse" aria-labelledby="business-heading-1" data-parent="#businessAccordion">
+      <div class="card-body">
+          <p>
+              AI Exchange is useful to any business that routinely collects data on complex phenomena and has one or more AI business cases in mind that are subject to uncertainty.
+              This setting usually means you already have at least a small team working on AI, Data Science, Advanced Analytics, or similar.
+          </p>
+          <p style="white-space: pre-line;text-align: justify">Business case examples are: customer churn, cash flow forecasting, anomaly detection, anti-fraud systems, recommender systems.
+              The list is by no means exhaustive!
+          </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="business-heading-2">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#business-collapse-2" aria-expanded="false" aria-controls="business-collapse-2">
+          Intellectual property will be exposed! Won't it?
+        </button>
+      </h5>
+    </div>
+    <div id="business-collapse-2" class="collapse" aria-labelledby="business-heading-2" data-parent="#businessAccordion">
+      <div class="card-body">
+      Short answer: <b>no</b>.
+      <p style="white-space: pre-line;text-align: justify">Data never leaves your cloud environment. Data is never exposed to experts.</p>
+      <p>The only data experts will ever access is a small sample that can be anonymized or synthetically generated for further protection.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC0dK5FfWBAubOIqGFC5OIZo_1SYeuaMLY",
+    authDomain: "aix-website-prod.firebaseapp.com",
+    projectId: "aix-website-prod",
+    storageBucket: "aix-website-prod.appspot.com",
+    messagingSenderId: "457150403897",
+    appId: "1:457150403897:web:5834813fe89d95b33a44e8",
+    measurementId: "G-517GHFLD1J"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="static/common.js" type="module"></script>
+
+
+</body>
+</html>

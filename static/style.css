@@ -1,0 +1,80 @@
+/**
+ * Copyright 2021 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+body {
+  font-family: "helvetica", sans-serif;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+bottom-three {
+   margin-bottom: 3cm;
+}
+
+.scoreboardTable {
+padding: 0;
+margin: auto;
+border-collapse: collapse;
+width: 80%;
+text-align: center;
+color: whitesmoke;
+}
+
+.scoreboardTableHeaderRow {
+color: darkorange;
+font-weight: bold;
+height: 50px;
+}
+
+.scoreboardTableBodyRow:nth-child(odd){background-color: rgba(128, 128, 128, 0.050);}
+#latestUserScore {
+background-color: crimson;
+}
+
+.scoreboardTableBodyRow:hover{
+background-color: darkorange;
+}
+
+.scoreboardTable tr td {
+height: 25px;
+}
+
+.accordion-section .panel-default > .panel-heading {
+    border: 0;
+    background: #f4f4f4;
+    padding: 0;
+}
+.accordion-section .panel-default .panel-title a {
+    display: block;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.accordion-section .panel-default .panel-title a:after {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-size: 3rem;
+    content: "\f106";
+    color: #1f7de2;
+    float: right;
+    margin-top: -12px;
+}
+.accordion-section .panel-default .panel-title a.collapsed:after {
+    content: "\f107";
+}
+.accordion-section .panel-default .panel-body {
+    font-size: 1.2rem;
+}

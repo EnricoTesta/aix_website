@@ -1,0 +1,5 @@
+host: "34.159.52.217"
+connection_name: "aix-website-prod:europe-west3:aix-db"
+database: "postgres"
+user: ""
+password: ''

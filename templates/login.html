@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+
+<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+        <span class="fs-4">
+
+        </span>
+
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="/profile" id="profile-page" hidden class="nav-link px-2 link-dark">Profile</a></li>
+        <li><a href="/challenges" id="challenges-page" class="nav-link px-2 link-dark">Challenges</a></li>
+        <li><a href="/video" id="video-page" class="nav-link px-2 link-dark">Video</a></li>
+        <li><a href="/leaderboard" id="leaderboard-page" class="nav-link px-2 link-dark">Leaderboard</a></li>
+        <li><a href="/faq" class="nav-link px-2 link-dark">FAQs</a></li>
+    </ul>
+
+    <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2" id="Login" onclick="location.href='/login'">Login</button>
+        <button type="button" class="btn btn-primary" id="sign-up" onclick="location.href='/signup'">Sign Up</button>
+        <button type="button" class="btn btn-outline-primary me-2" id="Logout" hidden>Logout</button>
+    </div>
+</header>
+
+<div class="col-md-10 mx-auto col-lg-5">
+    <form class="p-4 p-md-5 border rounded-3 bg-light" id="sign-in-form">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" id="sign-in">Sign In</button>
+        <li><a href="/forgot_password" class="nav-link px-2 link-dark">Forgot Password</a></li>
+        <li><a href="/resend_verification_email" class="nav-link px-2 link-dark">Resend Verification Email</a></li>
+    </form>
+</div>
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyC0dK5FfWBAubOIqGFC5OIZo_1SYeuaMLY",
+    authDomain: "aix-website-prod.firebaseapp.com",
+    projectId: "aix-website-prod",
+    storageBucket: "aix-website-prod.appspot.com",
+    messagingSenderId: "457150403897",
+    appId: "1:457150403897:web:5834813fe89d95b33a44e8",
+    measurementId: "G-517GHFLD1J"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="static/common.js" type="module"></script>
+<script src="static/signin.js" type="module"></script>
+
+
+</body>
+</html>

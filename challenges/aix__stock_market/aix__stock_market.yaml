@@ -1,0 +1,17 @@
+name: aix__stock_market
+display_name: AIX Stock Market
+prize: 50
+frequency: weekly
+start_date: 2022-01-01
+end_date: 2099-01-01
+inference_schedule: "0 18 * * 7"
+prize_assignment_schedule: "0 19 * * 7"
+backend_sample_dataset: stocks_sample_data
+active: True
+upload_window:
+  start:
+    weekday: 1
+    hour: 0
+  end:
+    weekday: 7
+    hour: 12
